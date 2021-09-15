@@ -1,0 +1,7 @@
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\bin\Debug\Prestations soins.exe.config
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\bin\Debug\Prestations soins.exe
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\bin\Debug\Prestations soins.pdb
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.csprojAssemblyReference.cache
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.csproj.CoreCompileInputs.cache
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.exe
+C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.pdb
