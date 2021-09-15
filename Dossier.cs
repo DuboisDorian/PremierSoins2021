@@ -9,7 +9,7 @@ using MaBoiteAOutils;
 
 namespace MaBoiteAOutils
 {
-    class Dossier
+    public class Dossier
     {
         private string nom;
         private string prenom;
@@ -19,17 +19,17 @@ namespace MaBoiteAOutils
         //Constructeur
         public Dossier(string nom, string prenom, DateTime dateNaissance)
         {
-            this.nom = nom;
-            this.prenom = prenom;
-            this.dateNaissance = dateNaissance;
+            this.nom = Nom;
+            this.prenom = Prenom;
+            this.dateNaissance = DateNaissance;
         }
 
         //Constructeur ListePrestations
         public Dossier(string nom, string prenom, DateTime dateNaissance, List<Prestations> listePrestations)
         {
-            this.nom = nom;
-            this.prenom = prenom;
-            this.dateNaissance = dateNaissance;
+            this.nom = Nom;
+            this.prenom = Prenom;
+            this.dateNaissance = DateNaissance;
             this.listePrestations = listePrestations;
         }
 
@@ -72,6 +72,18 @@ namespace MaBoiteAOutils
                 }
             }
             return i;
+        }
+        //création de la méthode to string
+        public override string ToString()
+        {
+            string s = "-----Debut dossier-------------";
+            s += "\nNom: " + this.nom + "Prenom: " + this.prenom + " Date de naissance: " + this.dateNaissance.Date;
+            foreach(Prestations prestation in listePrestations)
+            {
+                s += "\n" + prestation;
+            }
+            s += "\n-----Fin dossier-----------------";
+            return s;
         }
     }
     

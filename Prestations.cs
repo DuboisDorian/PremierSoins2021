@@ -45,6 +45,11 @@ namespace MaBoiteAOutils
         {
             return Comparer.DateHeureSoin.Date.CompareTo(ComparerA.DateHeureSoin.Date);
         }
-        
+        //création de la méthode to string
+        public override string ToString()
+        {
+            
+            return "\tLibelle: " + this.libelle + " - " + this.dateHeureSoin + " - Intervenant : "+intervenant+intervenantExterne; 
+        }
     }
 }

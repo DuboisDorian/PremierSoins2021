@@ -25,5 +25,11 @@ namespace ClassesMetier
         public string Specialite { get => specialite;}
         public string Adresse { get => adresse;}
         public string Tel { get => tel;}
+
+        public override string ToString()
+        {
+            return base.ToString() + " Spétialité : "+ this.Specialite +" "+this.Adresse+" - "+this.Tel;
+        }
     }
+    
 }

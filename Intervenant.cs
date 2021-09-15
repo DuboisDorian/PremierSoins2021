@@ -25,8 +25,13 @@ namespace ClassesMetier
         public string Nom { get => nom;}
         public string Prenom { get => prenom;}
 
-        //Méthode
-        
+        //création de la méthode ToString 
+        public override string ToString()
+        {
+
+            return  this.Nom + " - " + this.Prenom;
+        }
+
     }
 
     
