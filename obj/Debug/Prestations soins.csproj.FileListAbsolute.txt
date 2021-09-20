@@ -5,3 +5,10 @@ C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations 
 C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.csproj.CoreCompileInputs.cache
 C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.exe
 C:\Users\dorian.dubois\Documents\Prestations-soins-master\obj\Debug\Prestations soins.pdb
+C:\Users\doria\source\repos\PremierSoins2021tp2\bin\Debug\Prestations soins.exe.config
+C:\Users\doria\source\repos\PremierSoins2021tp2\bin\Debug\Prestations soins.exe
+C:\Users\doria\source\repos\PremierSoins2021tp2\bin\Debug\Prestations soins.pdb
+C:\Users\doria\source\repos\PremierSoins2021tp2\obj\Debug\Prestations soins.csproj.AssemblyReference.cache
+C:\Users\doria\source\repos\PremierSoins2021tp2\obj\Debug\Prestations soins.csproj.CoreCompileInputs.cache
+C:\Users\doria\source\repos\PremierSoins2021tp2\obj\Debug\Prestations soins.exe
+C:\Users\doria\source\repos\PremierSoins2021tp2\obj\Debug\Prestations soins.pdb

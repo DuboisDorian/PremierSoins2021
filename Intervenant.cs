@@ -26,7 +26,27 @@ namespace ClassesMetier
         public string Prenom { get => prenom;}
 
         //Méthode
-        
+        public override string ToString()
+        {
+            return " Intervenant : " + Nom + " - " + Prenom;
+        }
+        public int GetNbPrestation(List<Prestations> ext)
+        {
+            return ext.Count;
+        }
+        public int GetNbPrestationsIE(List<Prestations> ext)
+        {
+            int i = 0;
+            foreach (Prestations prestation in ext)
+            {
+                if (prestation.IntervenantExterne is IntervenantExterne)
+                {
+                    i++;
+                }
+            }
+            return i;
+        }
+
     }
 
     

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using ClassesMetier;
 using MaBoiteAOutils;
+using static ClassesMetier.Intervenant;
+
 
 
 namespace MaBoiteAOutils
@@ -72,6 +74,19 @@ namespace MaBoiteAOutils
                 }
             }
             return i;
+        }
+        public override string ToString()
+        {
+            string s = "-----Début de dossier----------";
+            s += "\nNom :" + this.nom + "Prenom :" + this.prenom + "Date de naissance : " + this.dateNaissance;
+            foreach (Prestations unePrestation in this.listePrestations)
+            {
+                s += "\n" + unePrestation.ToString();
+
+            }
+            string a = "\n----Fin dossier-----";
+            s += a;
+            return s;
         }
     }
     
