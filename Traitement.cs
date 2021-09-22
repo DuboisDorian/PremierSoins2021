@@ -21,17 +21,17 @@ namespace Prestations_soins
             Intervenant TH = new Intervenant("Tournier", "Hémène");
             List<Prestations> prestations = new List<Prestations>();
 
-            Prestations p3 = new Prestations("P3", Convert.ToDateTime("10/13/2015 12:00:00"), DP);
+            Prestations p3 = new Prestations("P3", new DateTime(2015,9,10,12,0,0), DP);
             prestations.Add(p3);
-            Prestations p1 = new Prestations("P1", Convert.ToDateTime("01/09/2015 12:00:00"), DA);
+            Prestations p1 = new Prestations("P1", new DateTime(2015, 9, 1, 12, 0, 0), DA);
             prestations.Add(p1);
-            Prestations p2 = new Prestations("P2", Convert.ToDateTime("08/09/2015 12:00:00"), SO);
+            Prestations p2 = new Prestations("P2", new DateTime(2015, 9, 8, 12, 50, 0), SO);
             prestations.Add(p2);
-            Prestations p4 = new Prestations("P4", Convert.ToDateTime("20/09/2015 12:00:00"), MJ);
+            Prestations p4 = new Prestations("P4", new DateTime(2015, 9, 20, 12, 0, 0), MJ);
             prestations.Add(p4);
-            Prestations p6 = new Prestations("P6", Convert.ToDateTime("08/09/2015 09:00:00"), BM);
+            Prestations p6 = new Prestations("P6", new DateTime(2015, 9, 8, 14, 30, 0), BM);
             prestations.Add(p6);
-            Prestations p5 = new Prestations("P5", Convert.ToDateTime("10/09/2015 06:00:00"), TH);
+            Prestations p5 = new Prestations("P5", new DateTime(2015, 9, 1, 16, 30, 0), TH);
             prestations.Add(p5);
 
 
