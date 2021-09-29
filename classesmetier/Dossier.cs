@@ -34,23 +34,24 @@ namespace ClassesMetier
         /// <param name="dateDeNaissance">date de naissance du patient au format JJ/MM/AAAA</param>
         public Dossier(string nomPatient, string prenomPatient, DateTime dateDeNaissance)
         {
-            try
-            {
+            
                 this.nomPatient = nomPatient;
                 this.prenomPatient = prenomPatient;
                 this.dateDeNaissancePatient = dateDeNaissance;
                 this.prestations = new List<Prestation>();
                 this.dateDeCreationDossier = DateTime.Now;
-                if(this.dateDeCreationDossier > DateTime.Now )
+        }
+        public Dossier(string nomPatient, string prenomPatient, DateTime dateDeNaissance, DateTime dateDeCreationDossier)
+            : this(nomPatient, prenomPatient, dateDeNaissance)
+        {
+            try {
+                this.dateDeCreationDossier = dateDeCreationDossier;
+                if (this.dateDeCreationDossier > DateTime.Now)
                 { throw new SoinsException("la date de création du dossier ne peut pas être supérieur à la date du jour"); }
             }
             catch (SoinsException ex) { Console.WriteLine(ex); }
         }
-        public Dossier(string nomPatient,string prenomPatient,DateTime dateDeNaissance,DateTime dateDeCreationDossier)
-            :this(nomPatient,prenomPatient,dateDeNaissance)
-        {
-            this.dateDeCreationDossier = dateDeCreationDossier;
-        }
+            
         /// <summary>
         /// constructeur surchargé.
         /// Il comprend en plus un objet de la classe Prestation à rajouter dans la 
